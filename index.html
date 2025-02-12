@@ -1,0 +1,181 @@
+
+<!--adding to numbers-->
+<!--<input id ="num1">
+<input id ="num2">
+<button onclick ="add()">Add</button>
+<p id="result">Result: </p>
+<script>
+    function add(){
+        var num1=(document.getElementById("num1").value);
+        var num2 = (document.getElementById("num2").value);
+        var sum = Number(num1) + Number(num2)
+        document.getElementById("result").innerText = "Result: " + sum;
+    }
+</script> -->
+
+     <!-------------------------------------------------------------NUMBER GAME----------------------------------------------------------------------->
+ <!--<h1>Guess the correct number</h1>
+ <input id = "guessnumber">
+ <button onclick ="check()">Check</button>
+ <p id="result">you are right or wrong </p>
+ <p id="score">Score:10</p>
+ <script>
+    var guessnumber = document.getElementById("guessnumber")
+    var result = document.getElementById("result")
+    var randomNumber = Math.floor(Math.random()*10)+1
+    var totalscore=10
+    function check(){
+        var enterednumber = guessnumber.value  
+        if(randomNumber==enterednumber)
+    {
+        
+        result.textContent="You guessed right"
+        alert("hey you won")
+    }
+    else{
+        totalscore=totalscore-1
+        score.textContent="score: "+totalscore
+        result.textContent="you guessed wrong"
+
+    }
+    }
+
+ </script>
+-->
+<!------------------------------whenever you click the button , the color will change--------------------------------------------------------------------------->
+
+<!--<style>
+    div{
+        background-color: red;
+        height: 100px;
+        width:100px;
+    }
+</style>
+<div id="box"></div>
+<button onclick="change()">change color</button>
+<script>
+    var box=document.getElementById("box")
+    function change(){
+        box.style.backgroundColor="green"
+        box.style.backgroundColor="blue"
+    }
+</script>
+-->
+<!----------------------------------------------------adding transition and color box-------------------------------------------------------------------------->
+<!--<style>
+    div{
+        background-color: red;
+        height: 100px;
+        width:100px;
+        transition: 2s;
+    }
+    .widthmax{
+        width: 900px;
+    }
+</style>
+<div id="box"></div>
+<button onclick="change()">change color</button>
+<script>
+    var box=document.getElementById("box")
+    function change(){
+        box.setAttribute("class","widthmax")
+    }
+</script>
+-->
+<!-------------------------------------------------------------whatevr i type in box it should display below------------------------------------------------->
+<!--<input id ="inputbox">
+<button onclick="update()">click</button>
+<h1 id="result"></h1>
+<script>
+    var s = document.getElementById("inputbox")
+    var r = document.getElementById("result")
+    function update(){
+        result.textContent=inputbox.value
+    }
+</script>
+-->
+<!--------------------------------------------------------------------same as above slight concept changed-------------------------------------------------->
+<!----
+<input id ="inputbox" onkeyup="update()">
+<h1 id="result"></h1>
+<script>
+    var s = document.getElementById("inputbox")
+    var r = document.getElementById("result")
+    function update(){
+        result.textContent=inputbox.value
+    }
+</script>
+-->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<!----
+<button onclick="update()">Add</button>
+<h1 id="one"></h1>
+<script>
+     var s = document.getElementById("one")
+     function update()
+     {
+                s.textContent="hello"
+     }
+</script> 
+-->
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!----
+<button onclick="update()">Add</button>
+<div id="one"></div>
+
+<script>
+     var s = document.getElementById("one")
+     function update()
+     {
+               //create new element
+               var n = document.createElement("h1")
+               n.textContent="hello"
+            s.append(n)
+     }
+</script> 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--
+<button id ="myButton" onclick="smile()">change color</button>
+<script>
+    function smile(){
+        var s = document.getElementById("myButton")
+             s.style.backgroundColor="green"
+    }
+</script>
+-------------------------------------------------------------------------USING 3 FUNCTIONS--------------------------------------------------------------------------------->
+<!----
+<button id ="one" onclick="update()">John</button>
+<button id ="two" onclick="create()">San</button>
+<button id ="sun" onclick="modify()">Vish</button>
+
+<div id="display1"></div>
+<div id="display2"></div>
+<div id="display3"></div>
+
+ <script>
+    function update(){
+              var s = document.getElementById("display1")
+                s.textContent="John"
+    }
+    function create(){
+        var n = document.getElementById("display2")
+        n.textContent="San"
+    }
+    function modify(){
+        var p = document.getElementById("display3")
+        p.textContent="Vish"
+    }
+ </script>
+ --------------------------------------------------------------------------USING 1 FUNCTION -> INTRODUCE TARGET AND EVENT---------------------------------------------------------------------------------------->
+<!----
+<H1 id ="result">Name</H1>
+<button onclick="update(event)">San</button>
+<button onclick="update(event)">dheep</button>
+<button onclick="update(event)">navi</button>
+<script>
+    var s = document.getElementById("result")
+    function update(event){
+        s.textContent=event.target.textContent
+    }
+</script>
+------------------------------------------------------------------------------------------------------------------------------------------------------------------>
